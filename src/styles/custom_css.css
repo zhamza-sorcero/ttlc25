@@ -1,0 +1,160 @@
+/* Modern Design System */
+:root {
+    --primary: #2563eb;
+    --primary-light: #3b82f6;
+    --secondary: #64748b;
+    --success: #22c55e;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --background: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styles */
+body {
+    background-color: var(--background);
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--text-primary);
+    line-height: 1.7;
+}
+
+/* Container Styles */
+.main .block-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 2rem;
+}
+
+/* Metric Cards */
+.sentiment-metric {
+    background: var(--card-bg);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sentiment-metric:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.metric-title {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.metric-value {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.75rem 0 0.5rem 0;
+    line-height: 1.2;
+    padding: 0;
+    word-break: break-word;
+}
+
+.metric-subtitle {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* Tab Styling */
+.stTabs {
+    margin-top: -1rem;
+}
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 1rem;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 3.5rem;
+    padding: 0 1.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #64748b;
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 0;
+    transition: all 0.2s ease;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    color: #1e293b;
+    background-color: transparent !important;
+    border-bottom: 2px solid #94a3b8;
+}
+
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    color: #1e293b;
+    background-color: transparent !important;
+    border-bottom: 2px solid #1e293b;
+    font-weight: 600;
+}
+
+.stTabs [data-baseweb="tab-panel"] {
+    padding: 1rem 0 0 0;
+}
+
+/* Hide any default borders */
+.stTabs [data-baseweb="tab-border"] {
+    display: none;
+}
+
+/* DataFrame Styling */
+.stDataFrame {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+/* Sidebar Refinements */
+.sidebar .sidebar-content {
+    background-color: var(--card-bg);
+    padding: 2rem 1rem;
+}
+
+.sentiment-value {
+    margin-top: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.sentiment-metric:hover .sentiment-value {
+    transform: scale(1.05);
+}
+
+.sentiment-metric .metric-value {
+    margin-top: 0.5rem;
+    line-height: 1.2;
+    display: block;
+}
+
+.sentiment-metric p {
+    margin: 0;
+    line-height: 1;
+}
