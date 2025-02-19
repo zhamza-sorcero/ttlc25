@@ -33,7 +33,7 @@ from src.views.metrics_view import (
 def main():
 
     st.set_page_config(
-        page_title="Winter Lung 2025",
+        page_title="Targeted Therapies of Lung Cancer 2025",
         layout="wide",
         initial_sidebar_state="expanded"
     )
