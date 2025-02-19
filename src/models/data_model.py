@@ -22,7 +22,7 @@ except LookupError:
     nltk.download('stopwords')
 
 
-def load_and_process_data(filepath='winter-lung.csv'):
+def load_and_process_data(filepath='ttlc25.csv'):
     """
     Loads and processes the CSV data, converting date strings to datetime
     and handling numeric columns appropriately.
