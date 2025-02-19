@@ -13,7 +13,7 @@ def display_title():
         <div style='text-align: center; padding: 1rem 0;'>
             <h1 style='font-size: 2.5rem; font-weight: 800; color: #1e293b; 
                       letter-spacing: -0.025em;'>
-                Winter Lung 2025
+                Targeted Therapies Lung Conference 2025
             </h1>
             <h2 style='color: #64748b; font-size: 1.1rem;'>
                 Social Sentiment
@@ -28,7 +28,7 @@ def display_title():
     """, unsafe_allow_html=True)
 
     # Read and display the CSV data
-    df = pd.read_csv('winter-lung.csv')
+    df = pd.read_csv('ttlc25.csv')
     st.dataframe(
         df.head(10),
         hide_index=True,
