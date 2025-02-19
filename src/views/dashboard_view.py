@@ -13,7 +13,7 @@ def display_title():
         <div style='text-align: center; padding: 1rem 0;'>
             <h1 style='font-size: 2.5rem; font-weight: 800; color: #1e293b; 
                       letter-spacing: -0.025em;'>
-                Targeted Therapies Lung Conference 2025
+                TTLC Conference 2025
             </h1>
             <h2 style='color: #64748b; font-size: 1.1rem;'>
                 Social Sentiment
