@@ -7,7 +7,6 @@ try:
     os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 except Exception as e:
     st.warning("OpenAI API key not found in secrets. Chat functionality will be disabled.")
-    os.environ["OPENAI_API_KEY"] = ""
 
 if __name__ == "__main__":
     try:
