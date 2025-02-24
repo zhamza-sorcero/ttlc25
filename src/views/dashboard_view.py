@@ -37,5 +37,5 @@ def display_title():
 
 
 def create_tabs():
-    tab1, tab2 = st.tabs(["📈 Engagement", "📊 Analysis"])
-    return tab1, tab2  # Return both tabs explicitly
+    tab1, tab2, tab3 = st.tabs(["📈 Engagement", "📊 Analysis", "💬 Chat"])
+    return tab1, tab2, tab3  # Return all three tabs explicitly

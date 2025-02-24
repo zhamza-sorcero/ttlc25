@@ -17,6 +17,7 @@ from src.views.dashboard_view import (
     create_tabs,
     display_title,
 )
+from src.views.chat_view import display_chat_tab
 from src.views.filters_view import display_filters
 from src.views.metrics_view import (
     create_engagement_scatter,
@@ -58,7 +59,7 @@ def main():
 
         display_metrics_with_icons(metrics)
 
-        tab1, tab2, = create_tabs()
+        tab1, tab2, tab3 = create_tabs()
 
         with tab1:
             st.plotly_chart(
@@ -72,7 +73,7 @@ def main():
                 }
             )
 
-        with tab2:  # Changed from tab3 to tab2
+        with tab2:
             col1, col2 = st.columns([0.6, 0.4])
             with col1:
                 # Word frequency section
@@ -156,6 +157,8 @@ def main():
                 use_container_width=True
             )
 
+        with tab3:
+            display_chat_tab()
 
     except Exception as e:
         st.error(f"Error loading data: {str(e)}")
